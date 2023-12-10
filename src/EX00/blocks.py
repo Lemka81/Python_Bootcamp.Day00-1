@@ -16,7 +16,7 @@ if valid():
         input_strings = [next(sys.stdin).strip() for _ in range(num_lines)]
         
         for string in input_strings:
-            block = valid_block(string)
+            block: str = valid_block(string)
             if block is not None:
                 print(block)
 else:

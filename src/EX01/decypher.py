@@ -7,7 +7,7 @@ def valid():
 		return None
 
 if valid():
-    line = sys.argv[1].split()
+    line: list[str] = sys.argv[1].split()
     for item in line:
         print(item[0], end='')
     print()
