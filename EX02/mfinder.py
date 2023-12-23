@@ -1,5 +1,6 @@
 import sys
 
+
 def check_m(line, i) -> bool:
     if i == 1:
         return line[::4] == "**" and "*" not in line[1:4]
