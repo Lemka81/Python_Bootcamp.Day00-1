@@ -1,5 +1,6 @@
 import sys
 
+
 def check_m(line, i) -> bool:
     if i == 1:
         return line[::4] == "**" and "*" not in line[1:4]
@@ -7,6 +8,7 @@ def check_m(line, i) -> bool:
         return line[::3] == line[3:] == "**" and "*" not in line[2]
     if i == 3:
         return line[::2] == "***" and "*" not in line[1::2]
+
 
 i: int = 0
 for line in sys.stdin:
@@ -19,6 +21,5 @@ for line in sys.stdin:
         else:
             res: bool = check_m(line, i)
             if res == 0 or i == 3:
-                print (res)
+                print(res)
                 break
-            
