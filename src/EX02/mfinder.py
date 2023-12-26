@@ -11,8 +11,9 @@ def check_m(line, i) -> bool:
 
 
 i: int = 0
-for line in sys.stdin:
-    line: str = line.rstrip()
+
+for i in range(3):
+    line: str = input().rstrip()
     if len(line):
         i += 1
         if i > 3 or len(line) != 5:
